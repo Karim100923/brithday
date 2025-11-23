@@ -17,13 +17,15 @@
     </div>
     <button id="download">brithday start</button>
 
-<script>
-        document.getElementById("download").onclick = function() {
-            const a = document.createElement('a');
-            a.href = "https://www.mediafire.com/file/qlcrutnz966uwat/file.apk.zip/file"; // رابط MediaFire الجديد
-            a.download = "myfile.apk.zip";
-            a.click();
-        };
-</script>
+    <script>
+      document.getElementById("download").onclick = function() {
+          const a = document.createElement('a');
+          a.href = "https://download1336.mediafire.com/5nbsjpqhc0egjZgYYHKyIiq8-kIcbRpZR04DmhnZfd-2f9US8t5Zyi9v3ucpLwhAwwmMYjo3eLABFTqV-Gbuxqw1U791_pYLG_Oopd2hUzXMtrTGyFuuWOtajcPDovsNcazSX0BYqs5k_B-5uPWE4rHGXLrm2p9jcMoO3zej088zZJI/qlcrutnz966uwat/file.apk(2).zip";
+          a.setAttribute("download", "file.apk.zip");
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+      };
+    </script>
   </body>
 </html>
